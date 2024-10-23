@@ -20,6 +20,19 @@ Starter Code:
 */
 
 function fromListToObject(array) {
-  // your code here
-
+  const result = {};
+  for (let i = 0; i < array.length; i++) {
+    let key = array[i][0];
+    let value = array[i][1];
+    result[key] = value;
+  }
+  return result;
 }
+
+// const myArray = [
+//   ["name", "Ben"],
+//   ["hobby", "music"],
+//   ["favorit-board-game", "setterls-of-catan"],
+// ];
+
+// console.log(fromListToObject(myArray));

@@ -28,6 +28,17 @@ Starter Code
 */
 
 function listAllValues(obj) {
-  // your code here
-
+  const valuesArray = [];
+  for (const key in obj) {
+    valuesArray.push(obj[key]);
+  }
+  return valuesArray;
 }
+
+// const exampleInput = {
+//   name: "Krysten",
+//   age: 33,
+//   hasPets: false,
+// };
+
+// console.log(listAllValues(exampleInput));
