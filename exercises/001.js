@@ -23,5 +23,8 @@ function transformFirstAndLast(array) {
 */
 
 function transformFirstAndLast(array) {
-  //your code here
+  return { [array[0]]: array[array.length - 1] };
 }
+
+// const testArray = ["Ben", "Melchizidek", "Frank", "Doggett"];
+// console.log(transformFirstAndLast(testArray));
