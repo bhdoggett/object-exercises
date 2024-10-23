@@ -22,5 +22,19 @@ Starter Code:
 */
 
 function convertObjectToList(obj) {
-  // your code here
+  const employeesArray = [];
+  for (const key in obj) {
+    const employeeKeyArray = [];
+    employeeKeyArray.push(key, obj[key]);
+    employeesArray.push(employeeKeyArray);
+  }
+  return employeesArray;
 }
+
+// const exampleInput = {
+//   species: "canine",
+//   name: "Bowser",
+//   weight: 45,
+// };
+
+// console.log(convertObjectToList(exampleInput));

@@ -25,6 +25,33 @@ Starter Code :
 */
 
 function transformEmployeeData(array) {
-  // your code here
-
+  let employeeArray = [];
+  for (let i = 0; i < array.length; i++) {
+    let employeeObject = {};
+    for (let j = 0; j < array[i].length; j++) {
+      let key = array[i][j][0];
+      let value = array[i][j][1];
+      employeeObject[key] = value;
+      //   console.log(employeeObject);
+    }
+    employeeArray.push(employeeObject);
+  }
+  return employeeArray;
 }
+
+// const exampleInput = [
+//   [
+//     ["firstName", "Joe"],
+//     ["lastName", "Blow"],
+//     ["age", 42],
+//     ["role", "clerk"],
+//   ],
+//   [
+//     ["firstName", "Mary"],
+//     ["lastName", "Jenkins"],
+//     ["age", 36],
+//     ["role", "manager"],
+//   ],
+// ];
+
+// console.log(transformEmployeeData(exampleInput));
